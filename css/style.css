@@ -1,0 +1,101 @@
+/*Mobile first design*/
+/*General tags*/
+body{
+	background-color: #ececec;
+	font-family: Roboto;
+	color: #3E3D45;
+	text-align: center;
+}
+
+a{
+	color: #D34F4E;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #ff3a38;
+}
+
+
+/*Classes*/
+.mainHeading{
+	font-size: 2.2em;
+	color: #D34F4E;
+}
+.introContainer{
+	margin: 2% auto;
+}
+.intro{
+	margin: 2% 10%;
+	font-size: 1.2em;
+}
+.componentsContainer .educationContainer .skillsContainer{
+	display: block;
+	margin: 0 10%;
+}
+
+.componentDescription, .educationContainer{
+	text-align: left;
+}
+
+.shadow{
+	text-shadow: 2px 2px 3px #c0bbbbc7;
+}
+
+.underline{
+	text-decoration: underline #3E3D45;
+}
+
+
+@media screen and (min-width: 760px){
+.componentsContainer, .educationContainer, .skillsContainer{
+	/*activate flexbox*/
+	display: flex;
+	/*assign the way you want to space the items*/
+	justify-content: space-between;
+	margin: 0 15%;
+	}
+
+.mainHeading{
+	font-size: 2.6em;
+	}
+
+.intro{
+	font-size: 1.4rem;
+	}
+}
+
+@media screen and (min-width: 1021px){
+
+.mainHeading{
+	font-size: 4em;
+	}
+
+.intro{
+	margin: 2% 25%;
+	font-size: 1.6rem;
+	}
+
+.educationContainer{
+	margin: 0 25%;
+}
+
+.skillsContainer{
+	margin: 0 15%;
+}
+	
+.component{
+	/*assign width for each component*/
+	flex-basis: 30%;
+}
+
+.education{
+	flex-basis: 45%;
+}
+
+.skills{
+	flex-basis: 35%;
+}
+}
+
+
